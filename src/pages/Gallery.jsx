@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PageHeader from '../components/UI/PageHeader';
-import { ColumnsPhotoAlbum } from 'react-photo-album';
-import 'react-photo-album/columns.css';
+import { MasonryPhotoAlbum } from 'react-photo-album';
+import 'react-photo-album/masonry.css';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -12,10 +12,10 @@ const photos = [
     { src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80", width: 1080, height: 800 },
     { src: "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&q=80", width: 1080, height: 1620 },
     { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80", width: 800, height: 1000 },
-    { src: "https://images.unsplash.com/photo-1521590832168-6080facceb5c?auto=format&fit=crop&q=80", width: 1200, height: 800 },
+    { src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80", width: 1200, height: 800 },
     { src: "https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&q=80", width: 1080, height: 1440 },
     { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80", width: 800, height: 1200 },
-    { src: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=80", width: 1200, height: 900 }
+    { src: "https://images.unsplash.com/photo-1515377659622-4b32d13086cd?auto=format&fit=crop&q=80", width: 1200, height: 900 }
 ];
 
 export default function Gallery() {
@@ -31,7 +31,7 @@ export default function Gallery() {
             <section className="py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <ColumnsPhotoAlbum
+                    <MasonryPhotoAlbum
                         photos={photos}
                         onClick={({ index }) => setIndex(index)}
                         columns={(containerWidth) => {
@@ -40,16 +40,14 @@ export default function Gallery() {
                             return 3;
                         }}
                         spacing={24}
-                        padding={0}
                         render={{
-                            image: (props) => (
-                                <div className="overflow-hidden rounded-sm cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500">
-                                    <img
-                                        {...props}
-                                        className="group-hover:scale-105 transition-transform duration-700 ease-out"
-                                        alt="Salon gallery work"
-                                    />
-                                </div>
+                            image: (props, { index }) => (
+                                <img
+                                    {...props}
+                                    style={{ ...props.style, borderRadius: '4px' }}
+                                    className="cursor-pointer shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 object-cover"
+                                    alt={`Salon gallery work ${index + 1}`}
+                                />
                             )
                         }}
                     />
