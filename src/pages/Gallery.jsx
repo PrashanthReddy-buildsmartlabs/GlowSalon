@@ -9,13 +9,13 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 // High quality Unsplash images mimicking salon work
 const photos = [
     { src: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80", width: 800, height: 1200 },
-    { src: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80", width: 1080, height: 800 },
-    { src: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80", width: 1080, height: 1620 },
-    { src: "https://images.unsplash.com/photo-1487412947154-7264a7c0bef8?auto=format&fit=crop&q=80", width: 800, height: 1000 },
-    { src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80", width: 1200, height: 800 },
-    { src: "https://images.unsplash.com/photo-1516975080661-46bfa33215be?auto=format&fit=crop&q=80", width: 1080, height: 1440 },
-    { src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80", width: 800, height: 1200 },
-    { src: "https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?auto=format&fit=crop&q=80", width: 1200, height: 900 }
+    { src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80", width: 1080, height: 800 },
+    { src: "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&q=80", width: 1080, height: 1620 },
+    { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80", width: 800, height: 1000 },
+    { src: "https://images.unsplash.com/photo-1521590832168-6080facceb5c?auto=format&fit=crop&q=80", width: 1200, height: 800 },
+    { src: "https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&q=80", width: 1080, height: 1440 },
+    { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80", width: 800, height: 1200 },
+    { src: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=80", width: 1200, height: 900 }
 ];
 
 export default function Gallery() {
