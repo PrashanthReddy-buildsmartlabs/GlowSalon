@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import emailjs from '@emailjs/browser';
-import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react';
+// import emailjs from '@emailjs/browser';
+import { MapPin, Phone, Clock, CheckCircle } from 'lucide-react';
 import PageHeader from '../components/UI/PageHeader';
 import Button from '../components/UI/Button';
 

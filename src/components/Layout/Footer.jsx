@@ -18,13 +18,13 @@ export default function Footer() {
                             Experience the pinnacle of luxury beauty. Our professional stylists and therapists are dedicated to bringing out your inner glow.
                         </p>
                         <div className="flex space-x-4 pt-2">
-                            <a href="#" className="text-gray-400 hover:text-gold transition-colors">
+                            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gold transition-colors">
                                 <Instagram className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-gold transition-colors">
+                            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gold transition-colors">
                                 <Facebook className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-gold transition-colors">
+                            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gold transition-colors">
                                 <Twitter className="w-5 h-5" />
                             </a>
                         </div>
@@ -85,8 +85,8 @@ export default function Footer() {
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                     <p>&copy; {currentYear} GlowSalon Hyderabad. All rights reserved.</p>
                     <div className="flex space-x-4 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>
